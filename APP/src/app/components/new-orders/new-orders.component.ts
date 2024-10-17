@@ -1,10 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as customerdetails from './customerdetails.json';
+
+
+interface customer{
+  OrderId:Number;
+  Name:String;
+  Address:String; 
+}
+
 
 @Component({
   selector: 'app-new-orders',
   templateUrl: './new-orders.component.html',
   styleUrl: './new-orders.component.css'
 })
-export class NewOrdersComponent {
+export class NewOrdersComponent implements OnInit  {
+Customerdetails: any;
+  
+customers:customer[]=customerdetails.Customers;
 
+  ngOnInit():void { }
 }

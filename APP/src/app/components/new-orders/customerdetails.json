@@ -1,0 +1,20 @@
+{
+    "Customers":[
+      {
+       "OrderId":356779,"Name":"Varun","Address":"7-67,Manikonda,Hyderabad"
+      },
+     
+      {
+          "OrderId":677862,"Name":"Arjun","Address":"4-34,vizag,AndhraPradesh"
+      },
+      
+      {
+          "OrderId":983217,"Name":"Sudeep","Address":"9-21,Banglore,Karnataka"
+      },
+      {
+        "OrderId":987234,"Name":"Raghu","Address":"9-34,gachibowli,Hyderbad"
+      }
+    ]
+  
+  }
+  

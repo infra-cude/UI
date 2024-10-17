@@ -11,7 +11,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { OrderHistoryComponent } from './components/order-history/order-history.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { NewOrdersComponent } from './components/new-orders/new-orders.component';
-
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -32,9 +32,11 @@ import { NewOrdersComponent } from './components/new-orders/new-orders.component
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatPaginatorModule
     
-
+    
+    
   ],
   providers: [
     provideAnimationsAsync()
