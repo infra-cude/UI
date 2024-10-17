@@ -1,29 +1,36 @@
+<mat-chip-set aria-label="Fish selection">
+  <mat-chip>25<br>Shipped</mat-chip>
+  <mat-chip>50<br>Delivered</mat-chip>
+  <mat-chip>05<br>Cancelled</mat-chip>
+  <mat-chip class="add">Adddress<br>480 Halvorson Underpass,Mayerville,Tennessee</mat-chip>
+</mat-chip-set><br>
+<p>
+  Manual<mat-slide-toggle>Automative</mat-slide-toggle>
+</p>
 
-<div class="container">
-<h1>New Orders</h1>
 <table>
-    <thead>
-        <th>OrderId</th>
-        <th>Name</th>
-        <th>Address</th>
-        <th></th>
-    </thead>
+    
     <tbody>
        <tr *ngFor="let x of customers">
-          <td>{{x.OrderId}}</td>
-          <td>{{x.Name}}</td>
-          <td>{{x.Address}}</td>
+          <td>Orded # {{x.Order}}<br>Oct 10 7:10 Pm
+          </td>
+          <td>{{x.Name}}<br>
+          {{x.Address}}</td>
           <td>
-            <button>SUBMIT</button>
+            Uber Eats
+           <br> <a href="#">Ubereats</a>
           </td>
           <td>
-            <button>CANCEL</button>
+            <button>Support</button>
+          </td>
+          <td>
+            <button>Cancel</button>
           </td>
         </tr>
 
     </tbody>
 </table>   
-</div>
+
 <mat-paginator [length]="4"
               [pageSize]="1"
               [pageSizeOptions]="[1,2,3,4]"

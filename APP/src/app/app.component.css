@@ -1,12 +1,13 @@
 .tool{
-    color: darkgreen;
-    background-color: chartreuse;
+    color: rgb(15, 147, 61);
+    background-color: rgb(253, 253, 253);
 }
 .filter{
     flex: 1 1 auto;
 }
 .search{
-    margin-left: 40px;
+    margin-left: 140px;
+    
 }
 .sidenav {
     position:absolute;
@@ -14,11 +15,22 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: #3bded6;
+    background: #e3eeed;
+  }
+  mat-sidenav{
+    min-width: 200px ;
+    width: 20px;
+    
   }
   mat-sidenav-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+    display:flex;
+    justify-content:left;
+    font-size: 10px;
   }
+  button.highlighted {
+    background-color: #227341; 
+    border: 2px solid #ffa500; 
+    color: white;
+  }
+  
+  

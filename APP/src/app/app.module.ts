@@ -12,8 +12,8 @@ import { OrderHistoryComponent } from './components/order-history/order-history.
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { NewOrdersComponent } from './components/new-orders/new-orders.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
-
-
+import {MatChipsModule} from '@angular/material/chips';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
 
@@ -33,7 +33,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatChipsModule,
+    MatSlideToggleModule
     
     
     

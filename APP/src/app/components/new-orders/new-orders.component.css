@@ -1,15 +1,27 @@
 th,td{
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 40px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 150px;
+    background-color: aliceblue;
+   
 }
 button{
     color: bisque;
-    padding: 4px;
-    background-color: chocolate;
+    padding: 5px;
+    background-color: rgb(255, 169, 41);
+    font-size:small;
+    width: 100px;
+    height: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table{
+    width: 100%;
+    justify-content: center;
+}
+tr{
+    border: 5px solid #ffffff;
+}
+.add{
+    flex: 0 0 auto;
+}
 
-}
-mat-paginatorr{
-    align-items: bottom;
-}

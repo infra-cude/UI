@@ -3,7 +3,7 @@ import * as customerdetails from './customerdetails.json';
 
 
 interface customer{
-  OrderId:Number;
+  Order:String;
   Name:String;
   Address:String; 
 }
@@ -20,4 +20,4 @@ Customerdetails: any;
 customers:customer[]=customerdetails.Customers;
 
   ngOnInit():void { }
-}
+};

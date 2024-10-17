@@ -1,5 +1,5 @@
 <mat-toolbar class="tool">
-    O&D
+    <b>O&D</b>
 <span class="search">
 <input type="text" placeholder="serach by Order Id,Customer Name">
 </span>
@@ -9,17 +9,20 @@
 <mat-sidenav-container class="sidenav">
     <mat-sidenav mode="side" opened>
         <a [routerLink]="['neworders']">
-            <button mat-button>New Orders</button>
+            <button mat-stroked-button >New Orders</button>
         </a><br>
          <a [routerLink]="['orderhistory']">
-            <button mat-button>Order History</button>
+            <button mat-stroked-button>Order History</button>
         </a><br>
         <a [routerLink]="['Notifications']">
-            <button mat-button>Notifications</button>
+            <button mat-stroked-button >Notifications</button>
         </a>
     </mat-sidenav>
+   
     <mat-sidenav-content>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
-   
+  <div>
+    
+  

@@ -2,7 +2,7 @@ import { Component, OnInit} from '@angular/core';
 
 
 interface Customers{
-  OrderId:Number;
+  OrderId:String;
   Name:string;
   Address:string;
 }
@@ -14,6 +14,6 @@ interface Customers{
 })
 export class AppComponent 
 {
- 
+  title(title: any) { }
   
 }
