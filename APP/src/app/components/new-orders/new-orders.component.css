@@ -1,27 +1,84 @@
 th,td{
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 150px;
+    
     background-color: aliceblue;
+    width: 1400px ;
+    
    
 }
 button{
-    color: bisque;
+    color: #ffffff;
     padding: 5px;
     background-color: rgb(255, 169, 41);
     font-size:small;
+    border-radius: 3px;
     width: 100px;
     height: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-table{
-    width: 100%;
-    justify-content: center;
-}
+
 tr{
-    border: 5px solid #ffffff;
+    border: 20px solid #ffffff;
 }
-.add{
-    flex: 0 0 auto;
+#address{
+  position: absolute;
+  right: 30;
+  color:dimgray;
+  size-adjust: 20px;
 }
+  
+table {
+    width: 100%;        /* Make the table responsive */
+    min-width: 600px;   /* Set a minimum width to avoid breaking */
+  }
+  .table-container {
+    width: 100%;
+    overflow-x: auto;   /* Ensures the table is scrollable on smaller screens */
+  }
+  mat-chip-set{
+      padding-left: 40px;
+      padding-top: 30px;
+  }
+  mat-chip{
+    padding: 30px;
+    justify-content: space-evenly 30px;
+  }
+ 
+  #cancelled{
+    background: white;
+    border-color: rgb(248, 173, 60);
+    color: rgb(255, 169, 41);
+    border-radius: 3px;
+    
+  }
+  i{
+    size: 10px;
+    color:dimgray
+  }
+  mat-slide-toggle{
+    transform: scale(0.60); /* Scale down the entire toggle */
+    width: 15px; /* Adjust the width */
+    height: 10px; /* Adjust the height */
+    padding-left: 10px;
+    color: #000;
+  }
+  
+  #second{
+    background: #eceaea;
+    gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+    
+  }
+  .chip-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
 

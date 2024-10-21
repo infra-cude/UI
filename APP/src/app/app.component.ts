@@ -12,8 +12,27 @@ interface Customers{
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent 
+export class AppComponent implements OnInit
 {
-  title(title: any) { }
-  
+setOnchangeButton(arg0: number) {
+throw new Error('Method not implemented.');
 }
+activeButton: any;
+  
+    ngOnInit() {
+      // Prevent scrolling of the entire page
+      document.body.style.overflow = 'hidden';
+  }
+  Activebutton: number = 1; // Set the default active button
+
+  setactiveButton(buttonNumber: number) {
+    this.activeButton = buttonNumber; // Set the clicked button as active
+  }
+    
+  }
+  
+  
+
+ 
+  
+  

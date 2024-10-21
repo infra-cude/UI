@@ -1,28 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>new orders</title>
+
 <mat-toolbar class="tool">
-    <b>O&D</b>
-<span class="search">
-<input type="text" placeholder="serach by Order Id,Customer Name">
-</span>
-<div class="filter"></div>
-<mat-icon>menu</mat-icon>
+    <strong>O&D</strong>
+    <span class="search">
+        <input type="text"  placeholder="Serach by Order Id,Customer Name">
+        <i class="bi bi-search"></i>
+    </span>
+    <span class="filter">
+      <button class="btn-close-white">Filter</button>
+    </span>
 </mat-toolbar>
-<mat-sidenav-container class="sidenav">
-    <mat-sidenav mode="side" opened>
-        <a [routerLink]="['neworders']">
-            <button mat-stroked-button >New Orders</button>
-        </a><br>
-         <a [routerLink]="['orderhistory']">
-            <button mat-stroked-button>Order History</button>
-        </a><br>
-        <a [routerLink]="['Notifications']">
-            <button mat-stroked-button >Notifications</button>
-        </a>
-    </mat-sidenav>
-   
-    <mat-sidenav-content>
-        <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
-  <div>
+<body>
     
-  
+    <mat-sidenav-container class="sidenav">
+        <mat-sidenav mode="side" opened>
+            <div class="button-group">
+            <a [routerLink]="['neworders']">
+                <button class="btn" [class.active]="activeButton === 1" (click)="setOnchangeButton(1)">NewOrders</button>
+            </a>
+            <a [routerLink]="['orderhistory']">
+                <button class="btn" [class.active]="activeButton === 1" (click)="setOnchangeButton(1)">OrderHistory</button>
+            </a>
+            <a [routerLink]="['Notifications']">
+               <button class="btn" [class.active]="activeButton === 1" (click)="setOnchangeButton(1)">Notifactions</button>
+            </a>
+            </div>
+        </mat-sidenav>
+        
+           
+          
+         
+        <mat-sidenav-content >
+            <router-outlet></router-outlet>
+            <div fxLayout="column" fxLayoutAlign="start center"></div>
+        </mat-sidenav-content>
+        
+    
+    </mat-sidenav-container>
+    
+    
+</body>
+

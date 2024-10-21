@@ -14,8 +14,10 @@ import { NewOrdersComponent } from './components/new-orders/new-orders.component
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatDividerModule} from '@angular/material/divider';
+import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -35,10 +37,11 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     MatToolbarModule,
     MatPaginatorModule,
     MatChipsModule,
-    MatSlideToggleModule
-    
-    
-    
+    MatSlideToggleModule,
+    FlexLayoutModule,
+    MatDividerModule,
+    FormsModule,
+    MatFormFieldModule
   ],
   providers: [
     provideAnimationsAsync()

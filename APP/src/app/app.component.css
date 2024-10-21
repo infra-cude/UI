@@ -1,36 +1,89 @@
 .tool{
-    color: rgb(15, 147, 61);
-    background-color: rgb(253, 253, 253);
+    color: rgb(4, 157, 144);
+    background: #f5f3f3;
 }
 .filter{
-    flex: 1 1 auto;
+    flex: 0 0 auto;
+    padding-bottom: 10px;
+    right: 100px;
+ 
 }
 .search{
     margin-left: 140px;
-    
-}
-.sidenav {
-    position:absolute;
-    top: 60px;
+    position: relative;
+      width: 140%;
+    }
+.sidenav{
+    position:fixed;
+    top: 70px;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #e3eeed;
-  }
-  mat-sidenav{
-    min-width: 200px ;
-    width: 20px;
+    
     
   }
-  mat-sidenav-content{
-    display:flex;
-    justify-content:left;
-    font-size: 10px;
+  mat-sidenav{
+    min-width: 150px ;
+    width: 20px;
+    max-width: 50px;
+    background-color: #f5f3f3;;
+
   }
-  button.highlighted {
-    background-color: #227341; 
+  
+  button.Onclick{
+    background-color: #2a8067; 
     border: 2px solid #ffa500; 
     color: white;
   }
+  button{
+    padding:4px;
+    width:20px;
+    min-width: 140px ;
+
+   }
   
   
+ 
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+input{
+  width: 450px;
+  border-radius: 20px;
+  height: 50px;
+  padding: 10px;
+  padding-left: 20px; 
+}
+i {
+  position: absolute;
+  right: 700px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(4, 157, 144);
+}
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #f1f1f1;
+  cursor:pointer;
+  transition: background-color ;
+  width: 20px;
+  min-width: 150px ;
+
+}
+
+.btn.active{
+  background-color: #d5e3f1; /* Active button background */
+  color: rgb(3, 108, 94); /* Active button text color */
+}
+
+.btn:hover {
+  color: white;
+  background-color: #02726f; /* Button hover effect */
+}
+
+
+

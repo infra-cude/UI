@@ -1,38 +1,52 @@
-<mat-chip-set aria-label="Fish selection">
-  <mat-chip>25<br>Shipped</mat-chip>
-  <mat-chip>50<br>Delivered</mat-chip>
-  <mat-chip>05<br>Cancelled</mat-chip>
-  <mat-chip class="add">Adddress<br>480 Halvorson Underpass,Mayerville,Tennessee</mat-chip>
-</mat-chip-set><br>
-<p>
-  Manual<mat-slide-toggle>Automative</mat-slide-toggle>
-</p>
-
-<table>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>new orders</title>
+</head>
+<body>
+  
+ <mat-chip-set >
+       <mat-chip>25<br>Shipped</mat-chip>
+      <mat-chip>50<br>Delivered</mat-chip>
+       <mat-chip>05<br>Cancelled</mat-chip>
+       <mat-chip id="address">Adddress<br>480 Halvorson Underpass,Mayerville,Tennessee     <i class="bi bi-geo-alt-fill"></i></mat-chip>
+   </mat-chip-set>
+   Manual<mat-slide-toggle >Automate</mat-slide-toggle>
+    <div class="chip-container">
+     <mat-chip-set >
+         <mat-chip *ngFor="let item of items" id="second" [removable]="true" (removed)="remove(item)">
+          <!-- <i class="bi bi-x"></i> -->
+          {{item}}<button matChipRemove *ngIf="remove">X</button>
+      </mat-chip >
+      </mat-chip-set>
+    </div>
+  <div class="table-container">
+  <table class="table">
     <tbody>
-       <tr *ngFor="let x of customers">
-          <td>Orded # {{x.Order}}<br>Oct 10 7:10 Pm
-          </td>
-          <td>{{x.Name}}<br>
-          {{x.Address}}</td>
-          <td>
-            Uber Eats
-           <br> <a href="#">Ubereats</a>
-          </td>
-          <td>
-            <button>Support</button>
-          </td>
-          <td>
-            <button>Cancel</button>
-          </td>
-        </tr>
+    <tr *ngFor="let x of customers">
+      <td>Orded # {{x.Order}}<br>Oct 10 7:10 Pm
+      </td>
+      <td><i class="bi bi-person-fill"></i>{{x.Name}}<br>
+        <i class="bi bi-geo-alt-fill"></i>{{x.Address}}</td>
+      <td> Uber Eats<br> <a href="#">Ubereats</a>
+      </td>
+      <td>
+        <button>Support</button>
+      </td>
+      <td>
+        <button id="Cancelled">Cancel</button>
+      </td>
+    </tr>
 
-    </tbody>
-</table>   
+  </tbody>
+</table>
 
-<mat-paginator [length]="4"
-              [pageSize]="1"
-              [pageSizeOptions]="[1,2,3,4]"
-              aria-label="Select page">
+
+<div fxLayout="row" fxLayoutAlign="start center">
+</div>
+
+<mat-paginator [length]="4" [pageSize]="1" [pageSizeOptions]="[1,2,3,4]" aria-label="Select page">
 </mat-paginator>
