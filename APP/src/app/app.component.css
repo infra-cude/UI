@@ -29,21 +29,7 @@
     background-color: #f5f3f3;;
 
   }
-  
-  button.Onclick{
-    background-color: #2a8067; 
-    border: 2px solid #ffa500; 
-    color: white;
-  }
-  button{
-    padding:4px;
-    width:20px;
-    min-width: 140px ;
-
-   }
-  
-  
- 
+   
 th, td {
   padding: 12px;
   text-align: left;
@@ -58,31 +44,40 @@ input{
 }
 i {
   position: absolute;
-  right: 700px;
+  right: 780px;
   top: 50%;
   transform: translateY(-50%);
   color: rgb(4, 157, 144);
 }
-.btn {
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: none;
-  background-color: #f1f1f1;
-  cursor:pointer;
-  transition: background-color ;
-  width: 20px;
-  min-width: 150px ;
+
+
+side-nav-content{
+  color: dimgray;
+}
+.pagination{
+justify-content: end;
+
 
 }
-
-.btn.active{
-  background-color: #d5e3f1; /* Active button background */
-  color: rgb(3, 108, 94); /* Active button text color */
+.active{
+  background-color: #02726f;
+  color: #f9f9f9;
+  margin: 0;
+  
+ 
+  
+  
 }
-
-.btn:hover {
-  color: white;
-  background-color: #02726f; /* Button hover effect */
+a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+ color:black;
+}
+mat-icon{
+  background: orange;
 }
 
 

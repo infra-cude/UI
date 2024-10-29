@@ -25,12 +25,12 @@ chips: any;
   ngOnInit():void { 
   
 }
-items: string[] = ['Uber Eats', 'Cancelled', 'Booked', 'Pending'];
+items: string[] = ['X Uber Eats', 'X Cancelled', 'X Booked', 'X Pending'];
   
-  remove(item: string): void {
-    const index = this.items.indexOf(item);
-    if (index >= 0) {
-      this.items.splice(index, 1);
-}
-  }
+//   remove(item: string): void {
+//     const index = this.items.indexOf(item);
+//     if (index >= 0) {
+//       this.items.splice(index, 1);
+// }
+  // }
 }

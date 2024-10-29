@@ -3,46 +3,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>new orders</title>
+<title>Main Page</title>
 
 <mat-toolbar class="tool">
     <strong>O&D</strong>
     <span class="search">
-        <input type="text"  placeholder="Serach by Order Id,Customer Name">
+        <input type="text" placeholder="Serach by Order Id,Customer Name">
         <i class="bi bi-search"></i>
     </span>
     <span class="filter">
-      <button class="btn-close-white">Filter</button>
+        <button class="btn-close-white">Filter</button>
     </span>
 </mat-toolbar>
+<hr>
+
 <body>
-    
+
     <mat-sidenav-container class="sidenav">
         <mat-sidenav mode="side" opened>
-            <div class="button-group">
-            <a [routerLink]="['neworders']">
-                <button class="btn" [class.active]="activeButton === 1" (click)="setOnchangeButton(1)">NewOrders</button>
-            </a>
-            <a [routerLink]="['orderhistory']">
-                <button class="btn" [class.active]="activeButton === 1" (click)="setOnchangeButton(1)">OrderHistory</button>
-            </a>
-            <a [routerLink]="['Notifications']">
-               <button class="btn" [class.active]="activeButton === 1" (click)="setOnchangeButton(1)">Notifactions</button>
-            </a>
-            </div>
-        </mat-sidenav>
-        
-           
-          
-         
-        <mat-sidenav-content >
-            <router-outlet></router-outlet>
-            <div fxLayout="column" fxLayoutAlign="start center"></div>
-        </mat-sidenav-content>
-        
-    
-    </mat-sidenav-container>
-    
-    
-</body>
 
+            <a routerLink="neworders" routerLinkActive="active"> NewOrders </a>
+            <a routerLink="orderhistory" routerLinkActive="active">OrderHistory</a>
+            <mat-icon>notifications</mat-icon><a routerLink="Notifications" routerLinkActive="active">Notifications </a> 
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li><a class="page-link rounded-circle" href="#">1</a></li>&nbsp;&nbsp;&nbsp;
+                    <li><a class="page-link rounded-circle" href="#">2</a></li>&nbsp;&nbsp;&nbsp;
+                   <li><a class="page-link rounded-circle" href="#">3</a></li>&nbsp;&nbsp;&nbsp;
+                    <li><a class="page-link rounded-circle" href="#">4</a></li>&nbsp;&nbsp;&nbsp;
+                    <li ><a class="page-link rounded-circle" href="#">5</a></li>&nbsp;&nbsp;&nbsp;
+                </ul>
+            </nav>
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+</body>

@@ -23,12 +23,7 @@ activeButton: any;
       // Prevent scrolling of the entire page
       document.body.style.overflow = 'hidden';
   }
-  Activebutton: number = 1; // Set the default active button
-
-  setactiveButton(buttonNumber: number) {
-    this.activeButton = buttonNumber; // Set the clicked button as active
-  }
-    
+ 
   }
   
   

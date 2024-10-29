@@ -58,7 +58,7 @@ table {
     transform: scale(0.60); /* Scale down the entire toggle */
     width: 15px; /* Adjust the width */
     height: 10px; /* Adjust the height */
-    padding-left: 10px;
+    padding-left: 120px;
     color: #000;
   }
   
@@ -69,11 +69,20 @@ table {
     cursor: pointer;
     
   }
-  .chip-container {
+  #chip-container {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
   }
+  .row {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+  }
+  #bchip{
+    background: rgb(232, 230, 230);
+  }
+  
   
   
   

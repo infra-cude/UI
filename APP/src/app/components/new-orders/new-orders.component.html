@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>new orders</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>new orders</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-  
- <mat-chip-set >
-       <mat-chip>25<br>Shipped</mat-chip>
-      <mat-chip>50<br>Delivered</mat-chip>
-       <mat-chip>05<br>Cancelled</mat-chip>
-       <mat-chip id="address">Adddress<br>480 Halvorson Underpass,Mayerville,Tennessee     <i class="bi bi-geo-alt-fill"></i></mat-chip>
-   </mat-chip-set>
-   Manual<mat-slide-toggle >Automate</mat-slide-toggle>
-    <div class="chip-container">
-     <mat-chip-set >
-         <mat-chip *ngFor="let item of items" id="second" [removable]="true" (removed)="remove(item)">
-          <!-- <i class="bi bi-x"></i> -->
-          {{item}}<button matChipRemove *ngIf="remove">X</button>
-      </mat-chip >
+
+  <mat-chip-set>
+    <mat-chip>25<br>Shipped</mat-chip>
+    <mat-chip>50<br>Delivered</mat-chip>
+    <mat-chip> 
+      <mat-icon> restaurant_menu</mat-icon>
+      05<br>Cancelled </mat-chip>
+   
+    <mat-chip id="address">Adddress<br>480 Halvorson Underpass,Mayerville,Tennessee <i
+        class="bi bi-geo-alt-fill"></i></mat-chip>
+  </mat-chip-set>
+  <div class="row">
+            <mat-slide-toggle>Automate</mat-slide-toggle>
+    <div id="chip-container">
+      <mat-chip-set>
+        <mat-chip *ngFor="let item of items" id="second" [removable]="true">{{item}}
+          <!-- <i class="bi bi-x"></i> cross icon -->
+          <!-- {{item}}<button id="bchip" matChipRemove *ngIf="remove"></button> -->
+        </mat-chip>
       </mat-chip-set>
     </div>
-  <div class="table-container">
-  <table class="table">
-    <tbody>
-    <tr *ngFor="let x of customers">
-      <td>Orded # {{x.Order}}<br>Oct 10 7:10 Pm
-      </td>
-      <td><i class="bi bi-person-fill"></i>{{x.Name}}<br>
-        <i class="bi bi-geo-alt-fill"></i>{{x.Address}}</td>
-      <td> Uber Eats<br> <a href="#">Ubereats</a>
-      </td>
-      <td>
-        <button>Support</button>
-      </td>
-      <td>
-        <button id="Cancelled">Cancel</button>
-      </td>
-    </tr>
+  </div>
+    <div class="table-container">
+      <table class="table">
+        <tbody>
+          <tr *ngFor="let x of customers">
+            <td>Orded # {{x.Order}}<br>Oct 10 7:10 Pm
+            </td>
+            <td><i class="bi bi-person-fill"></i>{{x.Name}}<br>
+              <i class="bi bi-geo-alt-fill"></i>{{x.Address}}
+            </td>
+            <td> Uber Eats<br> <a href="#">Ubereats</a>
+            </td>
+            <td>
+              <button>Support</button>
+            </td>
+            <td>
+              <button id="Cancelled">Cancel</button>
+            </td>
+          </tr>
 
-  </tbody>
-</table>
-
-
-<div fxLayout="row" fxLayoutAlign="start center">
-</div>
-
-<mat-paginator [length]="4" [pageSize]="1" [pageSizeOptions]="[1,2,3,4]" aria-label="Select page">
-</mat-paginator>
+        </tbody>
+      </table>
+     
